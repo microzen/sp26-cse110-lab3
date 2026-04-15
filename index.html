@@ -71,15 +71,16 @@
                     <h3>Feedback</h3>
                     <form action="./index.html">
                         <fieldset>
-                            <p>Do you like to record your name?</p>
+                            <legend>Feedback</legend>
+                            <textarea name="feedbacktext" id="feedbacktext" placeholder="feedback"></textarea>
+                            <br>
+                            <p>Do you like to record your student ID?</p>
                             <select name="interest" id="interest">
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
                             </select>
-                            <input type="text" placeholder="name">
-                            <p>Feedback</p>
-                            <textarea name="feedbacktext" id="feedbacktext" placeholder="feedback"></textarea>
-                            <br>
+                            <input type="text" placeholder="ID">
+                            <br><br>
                             <label for="browser_input">What browser you are using?</label>
                             <input list="browsers" name="browser_input" id = "browser_input">
                             <datalist id="browsers">
