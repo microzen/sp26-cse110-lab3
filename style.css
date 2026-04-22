@@ -18,6 +18,8 @@ body {
 }
 video{
     width: 500px;
+    min-width: 50px;
+    margin: auto;
 }
 #record{
     display: flex;
@@ -27,7 +29,7 @@ video{
 }
 section{
     width: auto;
-    
+    margin: auto;
 }
 #home{
     margin: 20px;
@@ -35,7 +37,7 @@ section{
         color: coral;
     }
 }
-#home a:hover{
+#home a:active{
     color: red;
 }
 #home a:visited{
@@ -78,16 +80,21 @@ span.date{
     font-style: italic;
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1rem;
+    margin-bottom: 1cm;
     padding: 20px 40px 20px 40px;
+}
+h2{
+    text-align: left;
+    --main-color: coral
 }
 section{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap:20px;
-    border: 1px solid black;
+    grid-auto-flow: column;
+    border: 1pt solid black;
     text-align: center;
     .div-button{
         background: rgb(16, 109, 155);
@@ -110,7 +117,7 @@ section{
 }
 .show-display1{
     display: inline;
-    height: 40px;
+    height: 40%;
     max-width: 100px;
     position:absolute;
 }
