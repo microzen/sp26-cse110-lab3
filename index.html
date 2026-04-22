@@ -4,13 +4,15 @@
         <title>CSE 110 Meeting - Warm-Up</title>
         <meta charset="UTF-8" />
         <link rel="icon" href="./house-solid-full.svg" />
+        <link rel="stylesheet" href="./style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header id="home">
             <h1>CSE 110 Meeting - Warm-Up</h1>
             <nav>
                 <ul>
-                    <li><a href="./index.html#home">Home</a></li>
+                    <li home="home"><a href="./index.html#home">Home</a></li>
                     <li><a href="./index.html#topic">Topics</a></li>
                     <li><a href="./index.html#attendance">Attendance</a></li>
                     <li><a href="./index.html#record">Record</a></li>
@@ -18,18 +20,25 @@
                 </ul>
             </nav>
         </header>
+        <div class="show-display1" style="background-color: aqua;">
+            Hello World! Display1
+        </div>
+        <div class="show-display2">
+            Hello World! Display2
+        </div>
         <hr>
         <main>
             <div class="main-container">
                 <section id = "topic">
                     <h2>Topics</h2>
+                    <p>this p is black</p>
                     <ul>
                         <li>Among US Game Activity</li>
                         <li>Management Assignment</li>
                         <li>Tech Warm-Up: The One Arm AI Slot Machine Experiment</li>
                     </ul>
                     <br>
-                    <span><strong>Apr 12 2026</strong></span>
+                    <span class="date"><strong>Apr 12 2026</strong></span>
                     <p>
                         This meeting will go over the <b>Management assignment</b> that <i>due tonight</i>
                     </p>
@@ -41,6 +50,7 @@
                         <li>Andre</li>
                         <li>Adam</li>
                     </ul>
+                    <div class="div-button">div button</div>
                 </section>
                 <section id="record">
                     <h2>Record</h2>
@@ -54,7 +64,6 @@
                     <br>
                     
                     <audio src="./audio/Team_Zingerz_Introduction.m4a" controls></audio>
-                    
                 </section>
                 <details>
                     <summary>
