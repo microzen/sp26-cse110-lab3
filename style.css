@@ -33,12 +33,11 @@ section{
     margin: 20px;
     a{
         color: coral;
-        &:active{
-            color: red;
-        }
     }
 }
-
+#home a:hover{
+    color: red;
+}
 #home a:visited{
     color: blue;
 }
@@ -92,21 +91,22 @@ section{
     text-align: center;
     .div-button{
         background: rgb(16, 109, 155);
-        margin: 20px 15px 20px 15px;
+    }
+}
+.div-button{
+    margin: 20px 15px 20px 15px;
         padding-bottom: 10px;
         padding-top: 10px;
         padding-left: 15px;
         padding-right: 15px;
         width: 50px;
         max-height: 100px;
-        &:hover{
-            background: color(display-p3 1 0 0);
-        }
-        
         border-radius: 20px;
         border-width: 3px;
         position: relative;
-    }
+}
+.div-button:hover{
+    background: color(display-p3 1 0 0);
 }
 .show-display1{
     display: inline;
