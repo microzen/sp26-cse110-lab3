@@ -31,18 +31,15 @@ section{
 }
 #home{
     margin: 20px;
-    padding: auto;
     a{
         color: coral;
-        &active{
+        &:active{
             color: red;
         }
     }
 }
 
 #home a:visited{
-    padding: auto;
-    margin: auto;
     color: blue;
 }
 p{
@@ -99,7 +96,7 @@ section{
         padding-bottom: 10px;
         padding-top: 10px;
         padding-left: 15px;
-        padding-right: 15px;;
+        padding-right: 15px;
         width: 50px;
         max-height: 100px;
         &:hover{
