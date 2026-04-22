@@ -1,0 +1,136 @@
+/* set all without margin and padding*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+  font-family: 'MyOpenSans'; 
+  src: url('./fonts/Open_Sans/static/OpenSans-VariableFont_wdth,wght.ttf') format('truetype'); 
+}
+body {
+  background-color: white;
+  font-family: 'MyOpenSans', sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+video{
+    width: 500px;
+}
+#record{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section{
+    width: auto;
+    
+}
+#home{
+    margin: 20px;
+    padding: auto;
+    a{
+        color: coral;
+        &active{
+            color: red;
+        }
+    }
+}
+
+#home a:visited{
+    padding: auto;
+    margin: auto;
+    color: blue;
+}
+p{
+    border-style: double;
+    border-color: black;
+}
+p:hover{
+    color: #3498db;
+    background-color: bisque;
+}
+li[home="home"]{
+    background-color: #3498db;
+}
+ol{
+    display: flex;
+    justify-content: space-between
+}
+ol li{
+    text-decoration: underline wavy blueviolet 2px;
+}
+ul > li{
+    background-color: azure;
+    list-style-type: none;
+}
+
+h2 ~ p{
+    color: color-mix(in srgb, red, blue);;
+}
+h2 + p{
+    color: black;
+}
+h2:has(+ p){
+    color:hsl(60, 56%, 45%)
+}
+span.date{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    border: 1px solid black;
+    text-align: center;
+    .div-button{
+        background: rgb(16, 109, 155);
+        margin: 20px 15px 20px 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;;
+        width: 50px;
+        max-height: 100px;
+        &:hover{
+            background: color(display-p3 1 0 0);
+        }
+        
+        border-radius: 20px;
+        border-width: 3px;
+        position: relative;
+    }
+}
+.show-display1{
+    display: inline;
+    height: 40px;
+    max-width: 100px;
+    position:absolute;
+}
+.show-display2{
+    display: none;
+}
+.main-container section{
+    flex-wrap: nowrap;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#topic ul{
+    display: grid;
+    grid-template-columns: auto;
+
+}
